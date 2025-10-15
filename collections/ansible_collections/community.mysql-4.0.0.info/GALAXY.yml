@@ -1,0 +1,8 @@
+download_url: https://automationhub.example.com/api/galaxy/v3/plugin/ansible/content/published/collections/artifacts/community-mysql-4.0.0.tar.gz
+format_version: 1.0.0
+name: mysql
+namespace: community
+server: https://192.168.182.154/api/galaxy/content/published/
+signatures: []
+version: 4.0.0
+version_url: /api/galaxy/content/published/v3/plugin/ansible/content/published/collections/index/community/mysql/versions/4.0.0/
