@@ -7,7 +7,7 @@
         msg:  'Ensure the web server is configured.'
 
     - name: Install the mysql collection first
-      delegate_to: localhost
+      delegate_to: automationcontroller.example.com
       ansible.builtin.command:  "ansible-galaxy collection install community.mysql -p collections --ignore-certs"
 
   roles:
