@@ -8,7 +8,7 @@
 
     - name: Install the mysql collection first
       delegate_to: localhost
-      ansible.builtin.command:  "ansible-galaxy collection install community.mysql"
+      ansible.builtin.command:  "ansible-galaxy collection install community.mysql -p collections"
 
   roles:
     - himzy.myvhost
