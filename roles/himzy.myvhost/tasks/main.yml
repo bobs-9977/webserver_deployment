@@ -1,0 +1,16 @@
+---
+# tasks file for himzy.myvhost
+
+- name: Ensure that the httpd is installed
+  ansible.builtin.dnf:
+    name: httpd
+    state:  latest
+
+- name: Ensure httpd is started and enabled
+  changed_when: true
+  notify:
+    - restart_httpd
+  ansible.builtin.service:
+    name: httpd
+    state:  started
+    enabled:  true
