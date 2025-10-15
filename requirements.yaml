@@ -1,1 +1,2 @@
-- src:  community.mysql
+collections:
+  - name: community.mysql
