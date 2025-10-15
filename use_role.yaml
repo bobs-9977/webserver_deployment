@@ -6,6 +6,9 @@
       ansible.builtin.debug:
         msg:  'Ensure the web server is configured.'
 
+    - name: Install the mysql collection first
+      ansible.builtin.command:  "ansible-galaxy collection install community.mysql -p collections"
+
   roles:
     - himzy.myvhost
 
