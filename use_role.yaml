@@ -1,6 +1,6 @@
 ---
 - name: Use the myvhost role
-  hosts:  dns.example.com
+  hosts:  rhelclient1.example.com
   pre_tasks:
     - name: Display the pretasks message
       ansible.builtin.debug:
